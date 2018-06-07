@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(i);
                         }
 
-                    Log.w("Login Response.", obj.toString());
+                    Log.w("Login Response", obj.toString());
                     finish();
 
 

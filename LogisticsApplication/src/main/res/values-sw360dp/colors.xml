@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="popup_topbar">#0064b2</color>
+    <color name="line_color">#707070</color>
+    <color name="colorPrimary">#81869a</color>
+    <color name="colorPrimaryDark">#6d7181</color>
+    <color name="colorAccent">#f7982e</color>
+    <color name="green">#4CAF50</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">	#F8F8F8 </color>
+    <color name="lightblack">#C7C7C7</color>
+    <color name="logo_blue">#254AA5</color>
+    <color name="logo_orange">#F87E2F</color>
+    <color name="orange">#F87E2F</color>
+    <color name="strip_color">#f5f5f5</color>
+    <color name="form_bg">#e1e1e1</color>
+    <color name="form_widget">#ebebeb</color>
+    <color name="form_drodown">#ebebeb</color>
+    <color name="light_orange">	#ffd7b5</color>
+    <color name="link_color">#e54115</color>
+    <color name="txt_color">#4a4343</color>
+    <color name="themeTextColor">#3a3a3a</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="shaded_white"> #f2f2f2</color>
+    <color name="lightwhite">#f4f4f4</color>
+    <color name="red">#FF0000</color>
+    <color name="lightgray">#e0e0e0</color>
+    <color name="green_circular">#33ccb2</color>
+    <color name="star_color">#FBC02D</color>
+    <color name="star_outline_color">#E0E0E0</color>
+    <!--<color name="light_gray_color">#fafafa</color>
+    <color name="light_txtbox_color">#f8f8f8</color>
+    --><color name="light_txtbox_color">#f5f5f5</color>
+    <color name="form_txt_color">#424141</color>
+    <color name="form_txt_color1">#282828</color>
+
+
+</resources>

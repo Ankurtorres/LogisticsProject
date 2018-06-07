@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_235"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:CustomTextView="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    android:layout_gravity="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_5">
+            <ImageView
+                android:id="@+id/nav_appiv_changeimage"
+                android:layout_width="@dimen/dp_235"
+                android:layout_height="@dimen/dp_235"
+                android:src="@drawable/homepage"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_.001"
+            android:background="@color/black"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/nav_ll_home"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/home"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Home"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+
+                    android:id="@+id/dash_tv_home" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_ll_boq1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/imageView21"
+                    android:src="@drawable/white"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Filter"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:id="@+id/dash_tv_boq1" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_ll_boq2"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/imageView22"
+                    android:src="@drawable/white"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Quality Assurance"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:id="@+id/dash_tv_boq2" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_ll_day_end"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/imageView23"
+                    android:src="@drawable/endjourney"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="End Journey"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:id="@+id/dayend" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nav_ll_help"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/endjourney"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Help"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:id="@+id/tvHelp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nav_ll_logout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:id="@+id/image23"
+                    android:src="@drawable/endjourney"
+                    android:layout_marginRight="@dimen/dp_10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Log Out"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:id="@+id/logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    tools:context="com.logimetrix.nj.logistics_project.ui.EndJourney">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_636"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:visibility="visible">
+            <com.logimetrix.nj.logistics_project.utills.CustomButton
+                android:id="@+id/end_d"
+                android:background="@drawable/day_end"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <com.logimetrix.nj.logistics_project.utills.CustomTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="Have a nice day..!!"
+            android:paddingTop="@dimen/dp_0"
+            CustomTextView:textStyle="9"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_25"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+</FrameLayout>

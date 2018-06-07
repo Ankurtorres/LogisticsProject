@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:CustomButton="http://schemas.android.com/apk/res-auto">
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:id="@+id/signaturePad">
+    </com.github.gcacace.signaturepad.views.SignaturePad>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true">
+
+        <com.logimetrix.nj.logistics_project.utills.CustomButton
+            android:id="@+id/saveButton"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textColor="@android:color/black"
+            android:background="@color/orange"
+            android:layout_margin="@dimen/dp_4"
+            CustomButton:textStyle="8"/>
+
+        <com.logimetrix.nj.logistics_project.utills.CustomButton
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearButton"
+            android:text="Clear"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:background="@color/orange"
+            android:layout_margin="@dimen/dp_4"
+            CustomButton:textStyle="8"/>
+        <com.logimetrix.nj.logistics_project.utills.CustomButton
+            android:id="@+id/cancelButton"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:background="@color/orange"
+            android:layout_margin="@dimen/dp_4"
+            CustomButton:textStyle="8"/>
+    </LinearLayout>
+</LinearLayout>

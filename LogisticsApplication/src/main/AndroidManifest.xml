@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logimetrix.nj.logistics_project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.VolleyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logistics_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logistics_app_icon"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <receiver
+            android:name=".Receivers.Receivers"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="logistics.do.logout" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".syncService.LocalToServer" />
+        <service android:name=".syncService.OnLineService1" />
+        <service android:name=".syncService.ForegroundService" />
+<service android:name="newSyncService.MainServiceClass"/>
+        <service android:name="newSyncService.AnotherService"/>
+        <activity android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait">
+            <activity android:name=".activities.Permissions"
+                android:screenOrientation="portrait"/>
+            />
+        </activity>
+        <activity android:name=".ui.StartJourney"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.Dialogs"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.DashBoard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.EndJourney"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.Help"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_70"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/loginContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_100"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+
+    <com.logimetrix.nj.logistics_project.utills.CustomEditText
+        android:id="@+id/userID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:drawableLeft="@drawable/vehicle_icon"
+        android:drawablePadding="@dimen/dp_.21"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_15"
+        android:maxLength="10"
+        android:gravity="center"
+        android:hint="Enter the Login Id"
+        android:textStyle="bold"
+        android:textColorHighlight="#00000000"
+        android:textSize="@dimen/sp_10"
+        android:ems="10"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+        <CheckBox
+            android:id="@+id/remember_id"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_30"
+            android:text="Remember me"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            android:layout_gravity="right"
+            android:buttonTint="@color/colorMain"
+            android:checked="true"/>
+
+
+        <com.logimetrix.nj.logistics_project.utills.CustomButton
+            android:id="@+id/login"
+            android:layout_width="@dimen/dp_155"
+            android:background="#5c8ec1"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

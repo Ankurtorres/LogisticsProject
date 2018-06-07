@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp_8"
+    android:layout_marginLeft="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_5">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardElevation="@dimen/dp_12"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        android:background="#0187ac">
+
+        <LinearLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5">
+            <!--Title !-->
+            <LinearLayout
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/destination"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/destinationpoint"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/destination"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/destination1"
+                        CustomTextView:textStyle="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="DESTINATION POINT"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/destination1"
+                        android:id="@+id/load_destination"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        CustomTextView:textStyle="4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Mumbai Port"/>
+                </RelativeLayout>
+<!--
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_title"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:src="@drawable/truckno"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_0"
+                        android:layout_toRightOf="@+id/iv_title"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:id="@+id/truck_no"
+                        android:layout_width="wrap_content"
+                        CustomTextView:textStyle="3"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:text="TRUCK NO."
+                        android:textStyle="bold" />
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="22dp"
+                        android:gravity="left"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_below="@id/truck_no"
+                        android:id="@+id/task_adapter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        CustomTextView:textStyle="4"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:text="UP32HL2564" />
+
+                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/date"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_8"
+                        android:src="@drawable/invoicedate"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_0"
+                        android:layout_toRightOf="@+id/date"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:id="@+id/start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        CustomTextView:textStyle="3"
+                        android:textColor="@color/green"
+                        android:text="DATE"
+                        android:textStyle="bold"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_22"
+                        CustomTextView:textStyle="4"
+                        android:gravity="left"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_below="@id/start_date"
+                        android:id="@+id/date_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:text="4 Aug 2017" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_download"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:padding="@dimen/dp_2"
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="#FFF"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:id="@+id/download"
+                        android:textColor="@color/green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="DOWNLOAD"
+                        android:paddingLeft="@dimen/dp_5"/>
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:src="@mipmap/ic_launcher"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Due !-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/mobile"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_5"
+                        android:src="@drawable/monileno"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/mobile"
+                        android:layout_marginTop="@dimen/dp_5"
+                        CustomTextView:textStyle="3"
+                        android:id="@+id/mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:text="MOBILE NO."
+                        android:textStyle="bold"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:textSize="@dimen/dp_12"
+                        android:layout_below="@id/mobile"
+                        android:id="@+id/task_adapter_due_date"
+                        CustomTextView:textStyle="4"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+918536254859"
+                        android:textColor="#000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/load_capacity"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_5"
+                        android:src="@drawable/loadcapacity"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        CustomTextView:textStyle="3"
+                        android:layout_toRightOf="@+id/load_capacity"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/load_capacity1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:text="LOAD CAPACITY"
+                        android:textStyle="bold"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:textSize="@dimen/dp_12"
+                        android:layout_below="@id/load_capacity1"
+                        android:id="@+id/layout_capacity"
+                        CustomTextView:textStyle="4"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25kg"
+                        android:textColor="#000"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:id="@+id/description"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_4"
+                        android:src="@drawable/description"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/description"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/description1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        CustomTextView:textStyle="3"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:text="DESCRIPTION OF MATERIAL"
+                        android:textStyle="bold"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:textSize="@dimen/dp_12"
+                        android:layout_below="@id/description1"
+                        android:id="@+id/load_description"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_5"
+                        CustomTextView:textStyle="4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="On the way buddy.On the way buddy.On the way buddy.On the way buddy.On the way buddy.On the way buddy.On the way buddy.On the way buddy."/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/quantity"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/quantitywad"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_6"
+                        android:layout_toRightOf="@+id/quantity"
+                        CustomTextView:textStyle="3"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:id="@+id/quantity1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="LOADED QUANTITY"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/quantity1"
+                        android:id="@+id/load_weight"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        CustomTextView:textStyle="4"
+                        android:text="254"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/weight"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/unit"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_6"
+                        android:layout_toRightOf="@+id/weight"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:id="@+id/unit"
+                        CustomTextView:textStyle="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="UNIT"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/unit"
+                        android:id="@+id/load_unit"
+                        CustomTextView:textStyle="4"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="KG / Carrets"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/consigner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/consignr"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/pic"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_6"
+                        android:layout_toRightOf="@+id/consignr"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:id="@+id/consigner1"
+                        CustomTextView:textStyle="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="CONSIGNER"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/consigner1"
+                        android:id="@+id/consignr1"
+                        CustomTextView:textStyle="4"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Sameer Nigam"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/consignee"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/pic"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_6"
+                        android:layout_toRightOf="@+id/consignee"
+                        android:layout_marginTop="@dimen/dp_6"
+                        CustomTextView:textStyle="3"
+                        android:id="@+id/consignee1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="CONSIGNEE"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/consignee1"
+                        android:id="@+id/consig"
+                        CustomTextView:textStyle="4"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Ankur Tiwari"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/packages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/pack"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/pic"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_6"
+                        android:layout_toRightOf="@+id/pack"
+                        CustomTextView:textStyle="3"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:id="@+id/pack1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="Transporter"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/pack1"
+                        android:id="@+id/pack2"
+                        CustomTextView:textStyle="4"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_7"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Arpit Tiwari"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/invoice"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_5"
+                        android:src="@drawable/invoiceno"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/invoice"
+                        android:layout_marginTop="@dimen/dp_5"
+                        CustomTextView:textStyle="3"
+                        android:id="@+id/invoice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="INVOICE AMOUNT"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/invoice1"
+                        android:id="@+id/load_invoice_no"
+                        android:textSize="@dimen/dp_12"
+                        CustomTextView:textStyle="4"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Rs.5000"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:id="@+id/invoice_date"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_4"
+                        android:src="@drawable/invoicedate"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/invoice_date"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/invoice_date1"
+                        CustomTextView:textStyle="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="INVOICE DATE"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/invoice_date1"
+                        android:id="@+id/load_invoice_date"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        CustomTextView:textStyle="4"
+                        android:text="5 Aug 2017"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:id="@+id/loading"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_4"
+                        android:src="@drawable/loadingpoint"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/loading"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/loading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        CustomTextView:textStyle="3"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="LOADING POINT"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/loading1"
+                        android:id="@+id/load_point"
+                        CustomTextView:textStyle="4"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Kandla Port"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+         <!--   <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:id="@+id/destination"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:paddingTop="@dimen/dp_3"
+                        android:src="@drawable/destinationpoint"/>
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/destination"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:id="@+id/destination1"
+                        CustomTextView:textStyle="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:text="DESTINATION POINT"/>
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomTextView
+                        android:layout_below="@id/destination1"
+                        android:id="@+id/load_destination"
+                        android:textSize="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        CustomTextView:textStyle="4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Mumbai Port"/>
+                </RelativeLayout>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent">
+
+                    <com.logimetrix.nj.logistics_project.utills.CustomButton
+                        android:id="@+id/job_complete"
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        CustomTextView:textStyle="3"
+                        android:textStyle="bold"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:textSize="@dimen/sp_9"
+                        android:background="@drawable/rect_back_orange"
+                        android:gravity="center"
+                        android:text="Complete Job"
+                        android:textColor="@color/white"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/dp_10" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout_comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_margin="@dimen/dp_5">
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

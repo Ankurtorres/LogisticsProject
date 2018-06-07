@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                     doLogin(userId.getText().toString());
             }
             else
-                Toast.makeText(this, "Enter the Vehicle Number..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Enter the Vehicle Number.", Toast.LENGTH_SHORT).show();
         } else
             Toast.makeText(this, "Please check your Internet Connection..", Toast.LENGTH_SHORT).show();
     }
@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(i);
                         }
 
-                    Log.w("Login Response", obj.toString());
+                    Log.w("Login Response.", obj.toString());
                     finish();
 
 

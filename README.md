@@ -29,6 +29,13 @@ At the end of the day user can  End his day.
 
 ![screenshot 20](https://user-images.githubusercontent.com/39953435/41190075-f4fe7960-6bf5-11e8-9ab6-ddd1bbfdf531.png)
 
+# Snapshots
+
+![screenshot 25](https://user-images.githubusercontent.com/39953435/41190914-c7e05192-6c04-11e8-9111-0ef2adcb059f.png)
+![screenshot 26](https://user-images.githubusercontent.com/39953435/41190915-c819f9a6-6c04-11e8-87a0-0cb613c3139b.png)
+![screenshot 27](https://user-images.githubusercontent.com/39953435/41190916-c853b8e4-6c04-11e8-97e2-778d2d97335a.png)
+![screenshot 28](https://user-images.githubusercontent.com/39953435/41190918-c8d26248-6c04-11e8-9a20-1706f1ddb3d1.png)
+![screenshot 29](https://user-images.githubusercontent.com/39953435/41190919-c909e3bc-6c04-11e8-820b-3448b22b575b.png)
 
 
 # Libraries Used
